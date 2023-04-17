@@ -9,12 +9,16 @@ import 'modern-normalize';
 import './index.css';
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-   <Provider store={store}>
+  <React.StrictMode>
+    <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter basename="/module_8_15">
           <App />
+
         </BrowserRouter>
       </PersistGate>
     </Provider>
- );
+  </React.StrictMode>
+);
